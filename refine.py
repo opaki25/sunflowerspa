@@ -1,0 +1,17 @@
+from pathlib import Path
+import re
+p=Path('dist/index.html');s=p.read_text(encoding='utf-8')
+s=re.sub(r'<div class="hero-title">.*?</div></div><div class="film-stage">','<div class="film-stage">',s,count=1)
+s=s.replace('<h2>Come in.<br><em>Exhale.</em></h2>','<h1>Your time<br>to <em>unwind.</em></h1>')
+s=s.replace('<p class="eyebrow">THE CITY CAN WAIT.</p>','<p class="eyebrow">SUNFLOWER SPA · KAMPALA</p>')
+s=s.replace('<p>A slower rhythm. A deeper breath.<br>A little time to feel like yourself again.</p>','<p>Thoughtful treatments. Welcoming spaces.<br>Discover your moment of calm in Kisasi or Bukoto.</p><div class="hero-actions"><button class="button" data-book>Book an appointment ↗</button><a href="#rituals">Explore treatments</a></div>')
+s=re.sub(r'<button class="orbit-book".*?</button>','',s)
+s=re.sub(r'<span class="flower-outline".*?</span>','',s)
+s=re.sub(r'<div class="footer-word".*?</div>','',s)
+s=s.replace('<h2>OUT OF OFFICE.<br><em>Into yourself.</em></h2>','<h2>A peaceful pause,<br><em>close to home.</em></h2>')
+s=s.replace('<h2>CHOOSE YOUR<br><em>change of pace.</em></h2>','<h2>Find your<br><em>Sunflower.</em></h2>')
+s=s.replace('<h2>YOU DESERVE<br><em>this.</em><span aria-hidden="true">✳</span></h2>','<h2>Make a little time<br><em>for yourself.</em></h2>')
+s=s.replace('<h2>Less rush.<br>More <em>you.</em></h2>','<h2>A warm welcome.<br><em>A quieter moment.</em></h2>')
+s=s.replace('style.css?v=2','style.css?v=3').replace('app.js?v=2','app.js?v=3')
+s=s.replace('</head>','<link rel="stylesheet" href="refined.css?v=3"></head>')
+p.write_text(s,encoding='utf-8')
