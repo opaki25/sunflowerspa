@@ -43,3 +43,11 @@ form.elements.time.addEventListener('input',()=>form.elements.time.setCustomVali
 $$('[data-image]').forEach(b=>b.onclick=()=>{$('#lightbox img').src='assets/'+b.dataset.image+'.webp';$('#lightbox img').alt=b.querySelector('img').alt;$('#lightbox').showModal()});$('#privacyOpen').onclick=()=>$('#privacy').showModal();
 let film=1;const video=$('#heroVideo');function videoState(){const paused=video.paused;$('#videoToggle').textContent=paused?'▶':'Ⅱ';$('#videoToggle').setAttribute('aria-label',paused?'Play background video':'Pause background video')}
 function playFilm(n){film=n;video.src='assets/tour-'+n+'.mp4';video.poster='assets/poster-'+n+'.jpg';video.play().catch(videoState);$$('[data-video]').forEach(b=>b.classList.toggle('active',+b.dataset.video===n))}video.onended=()=>playFilm(film===1?2:1);video.onplay=videoState;video.onpause=videoState;$('#videoToggle').onclick=()=>video.paused?video.play().catch(videoState):video.pause();$$('[data-video]').forEach(b=>b.onclick=()=>playFilm(+b.dataset.video));
+const showcaseButtons = [...document.querySelectorAll('[data-showcase]')];
+const showcasePanels = [...document.querySelectorAll('.feature-grid article')];
+function selectShowcase(index) {
+ showcaseButtons.forEach((button,i)=>{button.classList.toggle('active',i===index);button.setAttribute('aria-pressed',String(i===index));});
+ showcasePanels.forEach((panel,i)=>panel.classList.toggle('active',i===index));
+}
+showcaseButtons.forEach(button=>button.addEventListener('click',()=>selectShowcase(Number(button.dataset.showcase))));
+selectShowcase(0);

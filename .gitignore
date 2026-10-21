@@ -2,3 +2,4 @@ page-*.jpg
 page-*.png
 __pycache__/
 *.tar.gz
+dialog-styles.txt
