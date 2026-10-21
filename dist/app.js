@@ -17,7 +17,7 @@ const SERVICES=[
  ['Back & shoulder massage','Massage',[['60 min',100000]]],
  ['VIP massage room','Rituals',[['60 min',200000]]]
 ];
-const PHONE='256758918643';
+const PHONE='256770768705';
 const money=n=>'UGX '+n.toLocaleString('en-UG');
 const $=s=>document.querySelector(s);const $$=s=>[...document.querySelectorAll(s)];
 const chosen=new Map();let step=0;let message='';
