@@ -51,11 +51,3 @@ function selectShowcase(index) {
 }
 showcaseButtons.forEach(button=>button.addEventListener('click',()=>selectShowcase(Number(button.dataset.showcase))));
 selectShowcase(0);
-// Featured rituals feed directly into the existing multi-service booking.
-$$('[data-recommend]').forEach(button=>button.addEventListener('click',()=>{
- const index=Number(button.dataset.recommend);
- chosen.set(index,0);
- if(index===9) form.elements.guests.value=Math.max(2,Number(form.elements.guests.value)||1);
- sync();
- openBooking();
-}));
