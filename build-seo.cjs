@@ -1,6 +1,6 @@
 const fs = require('node:fs');
 const vm = require('node:vm');
-const base = 'https://sunflowerspa.vercel.app';
+const base = 'https://www.sunflowerwellnessspa.com';
 const services = vm.runInNewContext(fs.readFileSync('dist/app.js','utf8').split('const PHONE')[0]+';SERVICES');
 const esc = s => String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('"','&quot;');
 const money = n => 'UGX '+n.toLocaleString('en-US');

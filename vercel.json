@@ -3,5 +3,18 @@
   "framework": null,
   "buildCommand": "",
   "installCommand": "",
-  "outputDirectory": "dist"
+  "outputDirectory": "dist",
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "sunflowerspa.vercel.app"
+        }
+      ],
+      "destination": "https://www.sunflowerwellnessspa.com/:path*",
+      "permanent": true
+    }
+  ]
 }

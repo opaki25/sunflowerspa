@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sunflowerspa.vercel.app/sitemap.xml
+Sitemap: https://www.sunflowerwellnessspa.com/sitemap.xml

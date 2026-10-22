@@ -1,24 +1,24 @@
 # Sunflower Spa search setup
 
-Primary public website: https://sunflowerspa.vercel.app/
+Primary public website: https://www.sunflowerwellnessspa.com/
 
 ## Submit to Google
 
 1. Open https://search.google.com/search-console/ and sign in with the business owner's Google account.
-2. Add a **URL-prefix** property: `https://sunflowerspa.vercel.app/`.
+2. Add a **URL-prefix** property: `https://www.sunflowerwellnessspa.com/`.
 3. Choose the HTML tag verification method. Send the exact Google verification meta tag to the website maintainer to add to the homepage, then click Verify. No verification token has been added yet.
 4. In **Sitemaps**, submit `sitemap.xml` (full URL below).
 5. Use URL Inspection on the homepage and each page below; test the live URL and request indexing where available.
 6. Monitor Page indexing and Search results reports. Submission does not guarantee indexing or a ranking position.
 
-Sitemap: https://sunflowerspa.vercel.app/sitemap.xml
-Crawler rules: https://sunflowerspa.vercel.app/robots.txt
+Sitemap: https://www.sunflowerwellnessspa.com/sitemap.xml
+Crawler rules: https://www.sunflowerwellnessspa.com/robots.txt
 
 Pages:
-- https://sunflowerspa.vercel.app/
-- https://sunflowerspa.vercel.app/massage-treatments/
-- https://sunflowerspa.vercel.app/spa-in-kisasi/
-- https://sunflowerspa.vercel.app/spa-in-bukoto/
+- https://www.sunflowerwellnessspa.com/
+- https://www.sunflowerwellnessspa.com/massage-treatments/
+- https://www.sunflowerwellnessspa.com/spa-in-kisasi/
+- https://www.sunflowerwellnessspa.com/spa-in-bukoto/
 
 ## Local discovery
 
@@ -36,7 +36,7 @@ Test structured data at https://search.google.com/test/rich-results and general 
 
 The source of treatment prices is `dist/app.js`. Run `node build-seo.cjs` after service changes to regenerate crawlable prices, structured data and supporting pages. Update the sitemap lastmod date only when page content materially changes. Keep canonical URLs and sitemap URLs aligned if adopting a custom domain, and redirect old public URLs permanently. Do not use fragment links as sitemap pages.
 
-No fabricated ratings, opening hours, geographic coordinates, medical claims, keyword stuffing or hidden keyword lists were added. Known branch addresses are used; ask the owner for exact pins and confirmed hours before adding them. The secondary Sites preview remains owner-private. Canonical URLs point to the public Vercel site.
+No fabricated ratings, opening hours, geographic coordinates, medical claims, keyword stuffing or hidden keyword lists were added. Known branch addresses are used; ask the owner for exact pins and confirmed hours before adding them. The secondary Sites preview remains owner-private. Canonical URLs point to the custom domain.
 
 Sources:
 - https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap
