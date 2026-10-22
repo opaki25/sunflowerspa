@@ -15,6 +15,7 @@ const SERVICES=[
  ['Prenatal massage','Massage',[['60 min',150000]]],
  ['Foot & leg massage','Massage',[['60 min',100000]]],
  ['Back & shoulder massage','Massage',[['60 min',100000]]],
+ ['Relaxation Massage','Massage',[['60 min',250000],['90 min',300000]]],
  ['VIP massage room','Rituals',[['60 min',200000]]]
 ];
 const PHONE='256770768705';
