@@ -6,7 +6,7 @@ const SERVICES=[
  ['Hot stone','Rituals',[['60 min',150000],['90 min',200000]]],
  ['Hot towel','Rituals',[['60 min',150000],['90 min',200000]]],
  ['Body scrub & steam','Body care',[['60 min',200000],['90 min',250000]]],
- ['Moroccan bath','Body care',[['Up to 2 hours',250000]]],
+ ['Moroccan bath — done in steam','Body care',[['Up to 2 hours',250000]]],
  ['Four hands','Massage',[['60 min',250000],['90 min',300000]]],
  ['Couple massage','Massage',[['60 min',200000],['90 min',250000]]],
  ['Body & soul · scrub, stone, aroma','Rituals',[['90 min',250000]]],
